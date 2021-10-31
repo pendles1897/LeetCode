@@ -2,6 +2,8 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums, target):
+        self.nums = nums
+        self.target = target
         for a in nums:
             b = target - a
             if ((b in nums) == True and (nums.index(a) != nums.index(b))):
