@@ -1,15 +1,16 @@
-from typing import List
-
 class Solution:
-    def twoSum(self, nums, target):
+    import typing
+    def twoSum(self, nums:list, target:int):
         self.nums = nums
         self.target = target
         for a in nums:
             b = target - a
-            if ((b in nums) == True and (nums.index(a) != nums.index(b))):
+            target = a + b
+            if (((b in nums) == True) and ((nums.index(a) != nums.index(b)))):
                 return[nums.index(a),nums.index(b)]
-nums = [2,4,6,8]
-target = 12
-
+            elif (a == b) and (a + b == target) and ((nums.index(a) != nums.index(b))):
+                return[nums.index(a),nums.index(b)]
+nums = [3,3]
+target = 6
 combo1 = Solution()
 print(combo1.twoSum(nums,target))
