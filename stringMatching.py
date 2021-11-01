@@ -1,3 +1,12 @@
+"""
+TO DO:
+    1. Create additional method: arraySearch on par with stringMatching
+    2. Call arraySearch twice for both searches
+    NOTE:
+        Ensure they are not nexted. Both within same class as separate methods.
+"""
+
+
 from typing import Sized
 class Solution:
     from typing import List
